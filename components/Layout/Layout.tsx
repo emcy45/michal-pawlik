@@ -1,4 +1,5 @@
-import MainNavigation from "../MainNavigation/MainNavigation";
+import { Footer } from "../Footer";
+import { MainNavigation } from "../MainNavigation/MainNavigation";
 import React, { ReactNode } from "react";
 
 interface LayoutProps {
@@ -7,12 +8,10 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <MainNavigation />
-      <main>{children}</main>
-      <footer className="bg-gray-200 text-center p-4">
-        Stopka tekst tekst tekst zmiana
-      </footer>
+      <main className="my-6 mx-10 flex-grow">{children}</main>
+      <Footer />
     </div>
   );
 };

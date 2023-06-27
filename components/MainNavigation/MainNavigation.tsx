@@ -1,8 +1,9 @@
 import Link from "next/link";
 import classes from "./MainNavigation.module.css";
+import { FunctionComponent } from "react";
 
-function MainNavigation() {
-  return (
+export const MainNavigation: FunctionComponent = () => (
+  <>
     <header className={classes.header}>
       <a href="/">
         <img src="/random-logo.png" alt="Michał Pawlik" />
@@ -22,7 +23,5 @@ function MainNavigation() {
         </ul>
       </nav>
     </header>
-  );
-}
-
-export default MainNavigation;
+  </>
+);
