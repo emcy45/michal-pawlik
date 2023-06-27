@@ -10,7 +10,7 @@ export const About: FunctionComponent = () => (
     <div>
       <h1 className="my-4">Nagłówek 1</h1>
       <h2 className="bg-gray-200 text-center p-4">Nagłówek 2</h2>
-      <p>Zawartość strony: About Me Page</p>
+      <p>Zawartość strony: About Me Page asd asd asd zmiany zmiany zmiany</p>
     </div>
   </>
 );

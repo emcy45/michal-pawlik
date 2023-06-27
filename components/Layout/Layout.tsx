@@ -11,7 +11,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
       <MainNavigation />
       <main>{children}</main>
       <footer className="bg-gray-200 text-center p-4">
-        Stopka tekst tekst tekst
+        Stopka tekst tekst tekst zmiana
       </footer>
     </div>
   );
