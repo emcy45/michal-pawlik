@@ -1,15 +1,15 @@
-// import { FunctionComponent } from "react";
-// import { cn } from "utils/styles/utils";
+import { FunctionComponent } from "react";
 
-// const YEAR = new Date().getFullYear();
+const YEAR = new Date().getFullYear();
+type CopyrightProps = {
+  className?: string;
+};
 
-// type CopyrightProps = {
-//   className?: string;
-// };
-
-// export const Copyright: FunctionComponent<CopyrightProps> = ({ className }) => (
-//   <div className={cn("text-primary-300 flex gap-1", className)}>
-//     Made with by Michał Pawlik
-//     <span className="text-primary-400">{YEAR} ©</span>
-//   </div>
-// );
+export const Copyright: FunctionComponent<CopyrightProps> = ({ className }) => (
+  <div className="flex gap-2 justify-center p-2 border-t-2 border-dark-primary mx-10">
+    Made by Michał Pawlik
+    <span className="text-dark-special font-medium animate-pulse ">
+      {YEAR} ©
+    </span>
+  </div>
+);
