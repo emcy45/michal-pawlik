@@ -4,6 +4,11 @@ import Head from "next/head";
 import Image from "next/image";
 import type { FunctionComponent } from "react";
 
+const ImageStyles = {
+  borderRadius: "16px",
+  margin: "20px",
+};
+
 export const About: FunctionComponent = () => (
   <>
     <Head>
@@ -14,8 +19,8 @@ export const About: FunctionComponent = () => (
       Hi, my name is Michal and I'm from Wroclaw, Poland. I'm glad you found
       yourself here. I will introduce myself in a few words.
     </H2>
-    <div className="flex gap-14 items-center justify-between">
-      <div className="flex flex-col justify-center">
+    <div className=" flex gap-14 items-center justify-between">
+      <div className="flex flex-col">
         <Paragraph>
           In 2022 I graduated engineering studies at the Wrocław University of
           Science and Technology in the faculty of Civil Engineering,
@@ -38,7 +43,7 @@ export const About: FunctionComponent = () => (
       <Image
         alt="profile photo"
         src="/images/profilowe1.jpg"
-        className="rounded-xl"
+        style={ImageStyles}
         width={300}
         height={300}
       />
