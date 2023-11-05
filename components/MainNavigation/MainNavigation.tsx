@@ -3,11 +3,15 @@ import { FunctionComponent } from "react";
 
 export const MainNavigation: FunctionComponent = () => (
   <>
-    <header className="fixed flex items-center z-20 top-0 left-0 right-0 px-8 backdrop-blur font-normal justify-between">
+    <header className="fixed flex items-center z-20 top-0 left-0 right-0 backdrop-blur font-normal justify-between mx-10 md:mx-20">
       <Link href="/">
-        <img src="/images/logo.svg" className="max-w-xs m-0 p-0" />
+        <img
+          src="/images/logo.svg"
+          className="max-w-full h-auto m-0 p-0"
+          alt="Logo"
+        />
       </Link>
-      <nav>
+      <nav className="hidden md:flex">
         <ul className="flex">
           <li className="ml-6">
             <Link href="/" className="hover:text-dark-special">

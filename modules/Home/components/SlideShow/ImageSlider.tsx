@@ -25,7 +25,7 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ interval }) => {
     {
       src: "/images/slide7.jpg",
 
-      caption: "Babia Góra",
+      caption: "Babia Góra, Beskid Żywiecki",
       mapLink:
         "https://www.google.pl/maps/place/Babia+G%C3%B3ra/@49.5731883,19.5101969,14z/data=!3m1!4b1!4m6!3m5!1s0x4715d16a4efe96d7:0x95aad3bd66b951e1!8m2!3d49.5731628!4d19.5307964!16zL20vMDI3aHRq?entry=ttu",
     },

@@ -20,32 +20,33 @@ export const Contact: FunctionComponent = () => (
     <H2>
       Feel free to contact me in any way and let's start creating something new!
     </H2>
-
-    <ul className="flex flex-row">
-      <PhoneIcon className="my-5" />
-      <ExpandAnswer
-        expandText="Phone"
-        collapseText="Phone"
-        content="+48 537 918 042"
-      />
-    </ul>
-    <ul className="flex flex-row">
-      <Mail className="my-5" />
-      <ExpandAnswer
-        expandText="E-mail"
-        collapseText="E-mail"
-        content={emailLink}
-      />
-    </ul>
-    <ul className="flex flex-row my-6">
-      <Linkedin />
-      <Link
-        href="https://www.linkedin.com/in/micha%C5%82-pawlik-262037188/"
-        target="_blank"
-        className="ml-6 hover:text-dark-special"
-      >
-        Linkedin
-      </Link>
-    </ul>
+    <div>
+      <ul className="flex flex-row my-4">
+        <PhoneIcon />
+        <ExpandAnswer
+          expandText="Phone"
+          collapseText="Phone"
+          content="+48 537 918 042"
+        />
+      </ul>
+      <ul className="flex flex-row my-4">
+        <Mail />
+        <ExpandAnswer
+          expandText="E-mail"
+          collapseText="E-mail"
+          content={emailLink}
+        />
+      </ul>
+      <ul className="flex flex-row my-4">
+        <Linkedin />
+        <Link
+          href="https://www.linkedin.com/in/micha%C5%82-pawlik-262037188/"
+          target="_blank"
+          className="ml-6 hover:text-dark-special"
+        >
+          Linkedin
+        </Link>
+      </ul>
+    </div>
   </>
 );

@@ -45,7 +45,7 @@ const ExpandAnswer: React.FC<ExpandAnswerProps> = ({
   };
 
   return (
-    <div className="my-5">
+    <div>
       <button
         onClick={handleToggleExpand}
         className="hover:text-dark-special ml-6"

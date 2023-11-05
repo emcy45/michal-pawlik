@@ -6,7 +6,7 @@ type CopyrightProps = {
 };
 
 export const Copyright: FunctionComponent<CopyrightProps> = ({ className }) => (
-  <div className="flex gap-2 justify-center p-2 border-t-2 border-dark-primary mx-10">
+  <div className="flex gap-2 justify-center p-2 border-t-2 border-dark-primary">
     Made by Michał Pawlik
     <span className="text-dark-special font-medium animate-pulse ">
       {YEAR} ©
