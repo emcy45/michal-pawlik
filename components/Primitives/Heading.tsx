@@ -7,7 +7,7 @@ type TitleProps = {
 };
 
 export const H1: FunctionComponent<TitleProps> = ({ className, children }) => (
-  <h1 className={cn("text-4xl font-medium drop-shadow mb-5", className)}>
+  <h1 className={cn("text-4xl font-medium drop-shadow mb-5 mt-5", className)}>
     {children}
   </h1>
 );

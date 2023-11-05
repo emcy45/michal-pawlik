@@ -1,7 +1,6 @@
 import Head from "next/head";
 import { H1, H2 } from "@/components/Primitives/Heading";
 import ImageSlider from "./components/SlideShow/ImageSlider";
-import Spotify from "../../components/Footer/components/Spotify";
 
 export default function Home() {
   return (

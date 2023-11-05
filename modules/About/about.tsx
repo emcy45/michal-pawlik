@@ -14,12 +14,20 @@ export const About: FunctionComponent = () => (
     <Head>
       <title>About Me - Michał Pawlik</title>
     </Head>
+
     <H1>About me</H1>
     <H2>
       Hi, my name is Michal and I'm from Wroclaw, Poland. I'm glad you found
       yourself here. I will introduce myself in a few words.
     </H2>
-    <div className=" flex gap-14 items-center justify-between">
+    <div className=" flex flex-col md:flex-row items-center">
+      <Image
+        alt="profile photo"
+        src="/images/profilowe1.jpg"
+        style={ImageStyles}
+        width={300}
+        height={300}
+      />
       <div className="flex flex-col">
         <Paragraph>
           In 2022 I graduated engineering studies at the Wrocław University of
@@ -39,14 +47,6 @@ export const About: FunctionComponent = () => (
           interested in football, motorsport and gaming.
         </Paragraph>
       </div>
-
-      <Image
-        alt="profile photo"
-        src="/images/profilowe1.jpg"
-        style={ImageStyles}
-        width={300}
-        height={300}
-      />
     </div>
   </>
 );
