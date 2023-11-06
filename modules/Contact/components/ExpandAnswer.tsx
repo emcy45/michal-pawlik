@@ -46,10 +46,7 @@ const ExpandAnswer: React.FC<ExpandAnswerProps> = ({
 
   return (
     <div>
-      <button
-        onClick={handleToggleExpand}
-        className="hover:text-dark-special ml-6"
-      >
+      <button onClick={handleToggleExpand} className="hover:text-dark-special ">
         {expanded ? collapseText : expandText}
       </button>
 
@@ -61,10 +58,10 @@ const ExpandAnswer: React.FC<ExpandAnswerProps> = ({
           </Paragraph>
           <div className="flex items-center">
             <Files
-              className="my-4 hover:text-dark-special ml-6"
+              className="my-4 hover:text-dark-special "
               onClick={handleCopyClick}
             />
-            {copied && <p className="my-4 ml-6 animate-pulse">Copied!</p>}
+            {copied && <p className="my-4 animate-pulse">Copied!</p>}
           </div>
         </ul>
       )}

@@ -23,11 +23,11 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ interval }) => {
         "https://www.google.pl/maps/place/Las+R%C4%99dzi%C5%84ski/@51.1714575,16.9428757,15.75z/data=!4m6!3m5!1s0x470feae2d745b6f1:0xadbeeba3702f721a!8m2!3d51.1648551!4d16.9498895!16s%2Fg%2F122_4plc?entry=ttu",
     },
     {
-      src: "/images/slide7.jpg",
+      src: "/images/slide8.jpg",
 
-      caption: "Babia Góra, Beskid Żywiecki",
+      caption: "Brenna, Beskid Śląski",
       mapLink:
-        "https://www.google.pl/maps/place/Babia+G%C3%B3ra/@49.5731883,19.5101969,14z/data=!3m1!4b1!4m6!3m5!1s0x4715d16a4efe96d7:0x95aad3bd66b951e1!8m2!3d49.5731628!4d19.5307964!16zL20vMDI3aHRq?entry=ttu",
+        "https://www.google.pl/maps/place/Brenna/@49.7144079,18.8393826,12z/data=!3m1!4b1!4m6!3m5!1s0x47141edd5d62481b:0x724a77d8cf24c115!8m2!3d49.7184394!4d18.9436714!16zL20vMDR6NF9o?entry=ttu",
     },
     {
       src: "/images/slide4.jpg",
@@ -56,40 +56,42 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ interval }) => {
   };
 
   return (
-    <div className="z-10">
-      <div className="flex justify-center h-screen">
-        <div style={{ position: "relative" }}>
-          <Image
-            alt={images[currentImageIndex].caption}
-            src={images[currentImageIndex].src}
-            height={500}
-            width={500}
-            style={ImageStyles}
-          />
-          <p
-            style={{
-              position: "absolute",
-              bottom: 20,
-              left: 0,
-              right: 0,
-              background: "rgba(0, 0, 0, 0.5)",
-              color: "#fff",
-              textAlign: "center",
-              padding: "8px",
-              borderRadius: "0px 0px 16px 16px",
-            }}
-          >
-            <a
-              href={images[currentImageIndex].mapLink}
-              target="_blank"
-              rel="noopener noreferrer"
+    <>
+      <div className="z-10">
+        <div className="flex justify-center h-screen">
+          <div style={{ position: "relative" }}>
+            <Image
+              alt={images[currentImageIndex].caption}
+              src={images[currentImageIndex].src}
+              height={500}
+              width={500}
+              style={ImageStyles}
+            />
+            <p
+              style={{
+                position: "absolute",
+                bottom: 20,
+                left: 0,
+                right: 0,
+                background: "rgba(0, 0, 0, 0.5)",
+                color: "#fff",
+                textAlign: "center",
+                padding: "8px",
+                borderRadius: "0px 0px 16px 16px",
+              }}
             >
-              {images[currentImageIndex].caption}
-            </a>
-          </p>
+              <a
+                href={images[currentImageIndex].mapLink}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {images[currentImageIndex].caption}
+              </a>
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -21,15 +21,15 @@ export const Contact: FunctionComponent = () => (
       Feel free to contact me in any way and let's start creating something new!
     </H2>
     <div>
-      <ul className="flex flex-row my-4">
-        <PhoneIcon />
+      <ul className="flex my-4">
+        <PhoneIcon className="" />
         <ExpandAnswer
           expandText="Phone"
           collapseText="Phone"
           content="+48 537 918 042"
         />
       </ul>
-      <ul className="flex flex-row my-4">
+      <ul className="flex flex-row my-4 mx-4">
         <Mail />
         <ExpandAnswer
           expandText="E-mail"
