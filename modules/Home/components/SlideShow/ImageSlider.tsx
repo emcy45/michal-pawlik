@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 import Image from "next/image";
+import Link from "next/link";
+import { H1, H3 } from "@/components/Primitives/Heading";
 
 interface ImageSliderProps {
   interval: number;
@@ -57,16 +59,23 @@ const ImageSlider: React.FC<ImageSliderProps> = ({ interval }) => {
 
   return (
     <>
-      <div className="z-10">
+      <div className="z-10 my-5">
+        <Link href="/blogposts">
+          <H3>Blog Posts</H3>
+        </Link>
+
         <div className="flex justify-center h-screen">
           <div style={{ position: "relative" }}>
-            <Image
-              alt={images[currentImageIndex].caption}
-              src={images[currentImageIndex].src}
-              height={500}
-              width={500}
-              style={ImageStyles}
-            />
+            <Link href="/blogposts">
+              <Image
+                alt={images[currentImageIndex].caption}
+                src={images[currentImageIndex].src}
+                height={500}
+                width={500}
+                style={ImageStyles}
+              />
+            </Link>
+
             <p
               style={{
                 position: "absolute",

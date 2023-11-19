@@ -51,7 +51,7 @@ const ExpandAnswer: React.FC<ExpandAnswerProps> = ({
       </button>
 
       {expanded && (
-        <ul className="flex flex-row">
+        <ul className="flex flex-row my-2">
           <Paragraph>
             {content ||
               "Tutaj znajduje się dodatkowa zawartość, która się rozwija!"}{" "}

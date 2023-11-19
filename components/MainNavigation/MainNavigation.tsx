@@ -12,7 +12,7 @@ export const MainNavigation: FunctionComponent = () => (
             alt="Logo"
           />
         </Link>
-        <nav className="">
+        <nav className="md: ml-6">
           <ul className="flex justify-between">
             <li className="">
               <Link href="/" className="hover:text-dark-special">
