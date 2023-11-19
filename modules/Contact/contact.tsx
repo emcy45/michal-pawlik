@@ -42,7 +42,7 @@ export const Contact: FunctionComponent = () => (
         <Link
           href="https://www.linkedin.com/in/micha%C5%82-pawlik-262037188/"
           target="_blank"
-          className="ml-6 hover:text-dark-special flex flex-row "
+          className=" hover:text-dark-special flex flex-row "
         >
           Linkedin
         </Link>
